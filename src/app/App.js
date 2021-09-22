@@ -4,7 +4,7 @@ import logo from '../resources/logo.png';
 import filter from '../resources/filter.svg';
 import Categories from '../features/categories/Categories';
 import Posts from '../features/posts/Posts';
-import Search from '../components/Search';
+import Search from '../components/Search/Search';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="top-search">
-          {/* <Search /> */}
+          <Search />
         </div>
       </header>
       <div className="main-content">
@@ -27,7 +27,7 @@ function App() {
         <Categories /> */}
       </div>
       <footer>
-        {/* <Search /> */}
+        <Search />
         <button onClick={handleToggle}><img src={filter} className={`filter-icon ${isActive ? "active" : ''}`} alt="filter-categories" /></button>
       </footer>
     </div>

@@ -1,3 +1,8 @@
+html {
+    font-family: neo-sans, sans-serif;
+}
+
+
 .App {
     background-color: #f2f2f2;
     display: flex;
@@ -12,13 +17,19 @@ footer {
     background-color: #f8f8f8;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     box-shadow: 0 3px 30px rgb(0 0 0 / 12%);
 }
 
+.App-header {
+    justify-content: center;
+}
+
+
+
 footer {
     height: 60px;
+    justify-content: center;
 }
 
 .App-logo {
@@ -29,17 +40,57 @@ footer {
 button {
     border: none;
     background-color: transparent;
+    filter: none;
+    transition: filter 0.5s;
+}
+
+button.invisible {
+    display: none;
+}
+
+button:hover {
+    filter: brightness(75%);
 }
 
 .filter-icon {
     width: 24px;
+    padding: 0 12px;
 }
 
 .active {
     opacity: 0.7;
 }
 
+@media only screen and (max-width: 840px) {
+    .top-search {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 840px) {
+    .App-header {
+        padding: 30px;
+        justify-content: flex-start;
+    }
+
+    .App-logo {
+        width: 300px;
+        display: flex;
+        position: absolute;
+        margin: 0 5%;
+    }
+
+    .top-search {
+        margin: 0 auto;
+        width: 40%;
+        max-width: 400px;
+    }
+
+    .top-search form {
+        width: 100%;
+        max-width: 540px;
+    }
+    
     footer {
         display: none;
     }

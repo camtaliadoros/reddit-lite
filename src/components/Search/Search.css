@@ -1,0 +1,44 @@
+form {
+    border-bottom:#ff4500 solid 1px;
+    min-width: 200px;
+    max-width: 350px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+
+input {
+    border: none;
+    background: transparent;
+    width: 90%;
+    color: #ff4500;
+    padding: 0 6px;
+}
+
+input:focus {
+    background-color: rgba(125,125,125, 0.12);
+    outline: none;
+    border-radius: 3px;
+}
+
+input:focus-visible {
+    border: none;
+}
+
+input::placeholder {
+    color: rgba(255, 69, 0, 0.6);
+    font-style: italic;
+    font-family: neo-sans, sans-serif;
+}
+
+
+.toolbar-icon.search {
+    width: 24px;
+}
+
+.toolbar-icon.clear {
+    width: 18px;
+    padding: 3px;
+}
