@@ -1,0 +1,4 @@
+.post-listing {
+    grid-area: post-listing;
+    padding: 0 5%;
+}

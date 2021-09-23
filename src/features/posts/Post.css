@@ -1,0 +1,114 @@
+.post-card {
+    align-items: flex-start;
+    background-color: #F8F8F8;
+    padding: 24px 24px;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 30px rgb(0 0 0 / 12%);
+}
+
+@media only screen and (min-width: 840px) {
+    .post-card {
+        margin: 60px 0;
+    }
+}
+
+.post-header {
+    margin-left: 12px;
+}
+
+.category-icon {
+    width: 18px;
+}
+
+hr {
+    border-top: solid 1px #7D7D7D;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.post-info {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-info .row {
+    margin: 0;
+}
+
+.post-body img {
+    max-width: 100%;
+}
+
+.comments-btn img {
+    margin-right: 6px;
+    width: 20px;
+}
+
+.comments-btn {
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.comments-btn:hover{
+    filter: brightness(92%);
+}
+
+
+img {
+    max-width: 200px;
+}
+
+/* Text Styles */
+
+.post-title {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.category-title, 
+.time-display {
+    font-size: 12px;
+    font-weight: 400;
+    color: #7d7d7d;
+}
+
+.category-title {
+    margin: 0 0 0 6px;
+}
+
+.time-display {
+    font-style: italic;
+}
+
+.content-text {
+    font-size: 15px;
+  
+}
+
+.post-info p {
+    margin: 0;
+}
+
+.username-text {
+    color: #ff4500;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.comments-btn p {
+    font-size: 12px;
+    font-family: neo-sans;
+    color: #7d7d7d;
+    font-weight: 500;
+}
+
+
+
+.vote {
+    width: 30px;
+}

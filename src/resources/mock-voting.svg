@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="126.504" viewBox="0 0 46 126.504">
+  <g id="Group_24" data-name="Group 24" transform="translate(-124 -289.996)">
+    <path id="Icon_awesome-arrow-up" data-name="Icon awesome-arrow-up" d="M2.454,20.355.893,18.795a1.681,1.681,0,0,1,0-2.384L14.555,2.742a1.681,1.681,0,0,1,2.384,0L30.6,16.4a1.681,1.681,0,0,1,0,2.384l-1.561,1.561a1.689,1.689,0,0,1-2.412-.028l-8.065-8.466V32.063a1.683,1.683,0,0,1-1.687,1.688h-2.25a1.683,1.683,0,0,1-1.687-1.687V11.855L4.866,20.327a1.677,1.677,0,0,1-2.412.028Z" transform="translate(130.673 288.75)" fill="#46ba23" stroke="#46ba24" stroke-width="2"/>
+    <path id="Icon_awesome-arrow-up-2" data-name="Icon awesome-arrow-up" d="M2.454,20.355.893,18.795a1.681,1.681,0,0,1,0-2.384L14.555,2.742a1.681,1.681,0,0,1,2.384,0L30.6,16.4a1.681,1.681,0,0,1,0,2.384l-1.561,1.561a1.689,1.689,0,0,1-2.412-.028l-8.065-8.466V32.063a1.683,1.683,0,0,1-1.687,1.688h-2.25a1.683,1.683,0,0,1-1.687-1.687V11.855L4.866,20.327a1.677,1.677,0,0,1-2.412.028Z" transform="translate(162.166 417.747) rotate(180)" fill="none" stroke="#7d7d7d" stroke-width="2"/>
+    <text id="_102" data-name="102" transform="translate(124 364)" fill="#46ba23" font-size="24" font-family="NeoSansW1G-Medium, Neo Sans W1G" font-weight="500"><tspan x="0" y="0">102</tspan></text>
+  </g>
+</svg>

@@ -23,8 +23,8 @@ function App() {
         </div>
       </header>
       <div className="main-content">
-        {/* <Posts />
-        <Categories /> */}
+        <Posts />
+        {/* <Categories /> */}
       </div>
       <footer>
         <Search />
