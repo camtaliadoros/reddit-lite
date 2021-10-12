@@ -32,8 +32,8 @@ export default function Search() {
                 onChange={handleChange}
                 placeholder="Search"
             />
-            <button className={`clear-button" ${isActive ? "visible" : "invisible"}`} onClick={handleClear}><img className="toolbar-icon clear" src={exitIcon} alt="clear-search"/></button>
-            <button className={`search-button ${isActive ? "invisible" : "visible"}`} onClick={handleSubmit}><img className="toolbar-icon search" src={searchIcon} alt="search"/></button>
+            <button className={`clear-button" ${isActive ? "visible" : "invisible"} filter`} onClick={handleClear}><img className="toolbar-icon clear" src={exitIcon} alt="clear-search"/></button>
+            <button className={`search-button ${isActive ? "invisible" : "visible"} filter`} onClick={handleSubmit}><img className="toolbar-icon search" src={searchIcon} alt="search"/></button>
         </form>
     );
 }

@@ -107,6 +107,19 @@ img {
     font-weight: 500;
 }
 
+.comments-btn.active p {
+    color: #ff4500;
+    opacity: 1;
+}
+
+.comments-btn svg {
+    width: 22px;
+    margin-right: 6px;
+}
+
+.comments-btn.active path {
+    stroke: #ff4500;
+}
 
 
 .vote {

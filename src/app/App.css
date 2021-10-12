@@ -14,6 +14,10 @@ p {
     margin: 0 0 1.5em 0;
 }
 
+button {
+    font-family: neo-sans, sans-serif;
+}
+
 
 .App {
     background-color: #f2f2f2;
@@ -31,6 +35,11 @@ p {
     margin-bottom: 0.5em;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
 .App-header,
 footer {
     background-color: #f8f8f8;
@@ -39,6 +48,7 @@ footer {
     align-items: center;
     box-shadow: 0 3px 30px rgb(0 0 0 / 12%);
     z-index: 50;
+    padding: 12px;
 }
 
 
@@ -65,12 +75,23 @@ button {
     transition: filter 0.5s;
 }
 
+button.filter {
+    filter: none;
+    transition: filter 0.5s;
+}
+
+button.filter:hover {
+    filter: brightness(75%);
+}
+
 button.invisible {
     display: none;
 }
 
-button:hover {
-    filter: brightness(75%);
+
+
+button:disabled {
+    pointer-events: none;
 }
 
 .filter-icon {
@@ -122,9 +143,17 @@ button:hover {
     width: 100vw;
     grid-template-columns: 1fr;
     grid-template-areas: "post-listing";
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
+.main-content a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+    display: inline-block;
+}
 
 @media only screen and (min-width: 840px) {
     .main-content{

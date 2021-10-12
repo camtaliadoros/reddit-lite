@@ -1,15 +1,28 @@
 import './Posts.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Post from './Post';
-import { useSelector } from 'react-redux';
-import { selectPosts } from './postsSlice';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectPosts, isLoadingPosts, loadPosts } from './postsSlice';
 
 
 export default function Posts() {
+    const dispatch = useDispatch();
+    const loading = useSelector(isLoadingPosts);
     const posts = useSelector(selectPosts);
+
+
+    useEffect(() => {
+        dispatch(loadPosts());
+      }, [dispatch]);
+
+
+    if(loading) {
+        return <div>Loading</div>;
+    }
+
     return (
         <div className="post-listing">
-            {posts.map(post => <Post id={post.id} data={post}/>)}
+            {posts.map((post, index )=> <Post key={index} post={post}/>)}
         </div>
     )
 };

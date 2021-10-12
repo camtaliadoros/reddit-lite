@@ -1,0 +1,44 @@
+.comment-container {
+    background-color: #F2F2F2;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+.comment-header {
+    justify-content: space-between;
+}
+
+.comment-text {
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.comments-listing {
+    display: none;
+}
+
+.comments-listing.active {
+    display: block;
+    opacity: 1;
+}
+
+.comment button {
+    display: none;
+    color: #ff4500;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 36px auto;
+    padding: 0;
+    filter: none;
+    transition: filter 0.5s;
+    border-bottom: 1px solid #ff4500;
+}
+
+.comment button:hover {
+    filter: brightness(75%);
+}
+
+.comment button.active {
+    display: block;
+    opacity: 1;
+}

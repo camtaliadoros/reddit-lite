@@ -1,0 +1,12 @@
+.votes img {
+    width: 24px;
+}
+
+#upBtn {
+    transform: rotate(180deg);
+}
+
+.votes p {
+    margin: 9px 0;
+    text-align: center;
+}

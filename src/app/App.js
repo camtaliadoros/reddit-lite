@@ -28,7 +28,7 @@ function App() {
       </div>
       <footer>
         <Search />
-        <button onClick={handleToggle}><img src={filter} className={`filter-icon ${isActive ? "active" : ''}`} alt="filter-categories" /></button>
+        <button className="filter" onClick={handleToggle}><img src={filter} className={`filter-icon ${isActive ? "active" : ''}`} alt="filter-categories" /></button>
       </footer>
     </div>
   );
