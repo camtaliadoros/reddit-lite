@@ -4,13 +4,22 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const loadPosts = createAsyncThunk(
     'posts/loadPosts',
-    async () => {
-        const response = await fetch('https://www.reddit.com/r/popular.json');
-        const json = await response.json();
-        console.log(json.data.children);
-        return json.data.children;
+    async (term) => {
+        if (term) {
+            const response = await fetch('https://www.reddit.com/search.json?q=' + term);
+            const json = await response.json();
+            console.log(json.data.children);
+            return json.data.children;
+        } else {
+            const response = await fetch('https://www.reddit.com/r/popular.json');
+            const json = await response.json();
+            console.log(json.data.children);
+            return json.data.children;
+        }
+
     }
 )
+
 
 export const postsSlice = createSlice({
     name: 'posts',

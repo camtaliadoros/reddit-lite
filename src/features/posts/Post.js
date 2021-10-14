@@ -56,7 +56,7 @@ export default function Post({ post }) {
                     <div className="row">
                         <button className={`comments-btn row ${isActive ? "active" : ""}`} onClick={handleToggle}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24.452" height="25.866" viewBox="0 0 24.452 25.866">
-                                <path id="Icon_material-mode-comment" data-name="Icon material-mode-comment" d="M25.439,5.245A2.242,2.242,0,0,0,23.205,3H5.245A2.252,2.252,0,0,0,3,5.245v13.47A2.252,2.252,0,0,0,5.245,20.96H20.96l4.49,4.49Z" transform="translate(-2 -2)" fill="none" stroke="#7d7d7d" stroke-width="2"/>
+                                <path id="Icon_material-mode-comment" data-name="Icon material-mode-comment" d="M25.439,5.245A2.242,2.242,0,0,0,23.205,3H5.245A2.252,2.252,0,0,0,3,5.245v13.47A2.252,2.252,0,0,0,5.245,20.96H20.96l4.49,4.49Z" transform="translate(-2 -2)" fill="none" stroke="#7d7d7d" strokeWidth="2"/>
                             </svg>
 
                             <p>{numOfComments}</p>
